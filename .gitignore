@@ -1,0 +1,8 @@
+.env
+*.log
+node_modules/
+data/learning-loop/archive/
+__pycache__/
+.DS_Store
+Thumbs.db
+*.tmp

@@ -1,0 +1,66 @@
+# Docker Compose for Save Les Bolstad — OpenClaw Multi-Agent Campaign
+#
+# Usage:
+#   cp .env.example .env   # fill in API keys
+#   docker compose up -d   # start gateway + all agents
+#   docker compose logs -f # watch agent activity
+
+services:
+  openclaw-gateway:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: bolstad-gateway
+    restart: unless-stopped
+    ports:
+      - "18789:18789"
+    volumes:
+      - ./config/openclaw.json5:/home/node/.openclaw/openclaw.json:ro
+      - ./agents:/home/node/.openclaw/agents:rw
+      - ./data:/home/node/.openclaw/workspace/data:rw
+      - ./skills:/home/node/.openclaw/skills:ro
+      - bolstad-sessions:/home/node/.openclaw/agents
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GOOGLE_AI_API_KEY=${GOOGLE_AI_API_KEY}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+      - LARRYBRAIN_API_KEY=${LARRYBRAIN_API_KEY:-}
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+      - OPENCLAW_GATEWAY_TOKEN=${OPENCLAW_GATEWAY_TOKEN:-}
+      - NODE_ENV=production
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:18789/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+          cpus: "2.0"
+    security_opt:
+      - no-new-privileges:true
+
+  openclaw-cli:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: bolstad-cli
+    network_mode: "service:openclaw-gateway"
+    volumes:
+      - ./config/openclaw.json5:/home/node/.openclaw/openclaw.json:ro
+      - ./agents:/home/node/.openclaw/agents:rw
+      - ./data:/home/node/.openclaw/workspace/data:rw
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GOOGLE_AI_API_KEY=${GOOGLE_AI_API_KEY}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+    profiles:
+      - cli
+    entrypoint: ["openclaw"]
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - NET_RAW
+      - NET_ADMIN
+
+volumes:
+  bolstad-sessions:
+    name: bolstad-sessions

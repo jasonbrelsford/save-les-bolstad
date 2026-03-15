@@ -1,0 +1,24 @@
+{
+  "agent": "bolstad-analytics",
+  "role": "Data Analytics & Campaign Intelligence",
+  "model": "deepseek/deepseek-chat",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Set up KPI tracking framework — define data sources for each metric",
+      "Research baseline sentiment on Les Bolstad closure (news, social, forums)",
+      "Create dashboard data collection plan — what to scrape, how often",
+      "Analyze demographic data — who plays at Les Bolstad, catchment area",
+      "Research comparable course closure impacts on surrounding communities",
+      "Set up Google Trends tracking for relevant keywords",
+      "Build media monitoring keyword list",
+      "Define A/B testing framework for campaign messaging",
+      "Create weekly report template for coordinator consumption",
+      "Research university enrollment and alumni engagement trends",
+      "Analyze golf industry trends in Minnesota — growth vs decline"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": ""
+}

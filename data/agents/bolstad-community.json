@@ -1,0 +1,24 @@
+{
+  "agent": "bolstad-community",
+  "role": "Community Engagement & Dual-Use Design",
+  "model": "deepseek/deepseek-chat",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Research online petition platforms — Change.org vs standalone",
+      "Draft petition text with compelling narrative and clear ask",
+      "Design volunteer sign-up process and role categories",
+      "Plan first community event — town hall or community golf outing",
+      "Research dual-use precedents (Jackson Park, Bethpage, Torrey Pines, Harding Park)",
+      "Draft Community Pass concept — non-golfer public access design",
+      "Identify local businesses near the course for coalition building",
+      "Plan non-golf programming ideas (yoga, cross-country skiing, gardens, stargazing)",
+      "Design 'Friends of Les Bolstad' alliance structure",
+      "Research Falcon Heights community organizations and neighborhood groups",
+      "Create volunteer communication channel plan"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": ""
+}

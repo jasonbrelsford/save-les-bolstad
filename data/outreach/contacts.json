@@ -1,0 +1,28 @@
+{
+  "contacts": [],
+  "template": {
+    "name": "",
+    "title": "",
+    "org": "",
+    "email": null,
+    "phone": null,
+    "category": "",
+    "stance": "unknown",
+    "notes": "",
+    "lastContact": null,
+    "priority": "medium"
+  },
+  "categories": [
+    "university-admin",
+    "board-of-regents",
+    "alumni",
+    "city-council",
+    "state-legislature",
+    "mn-golf-association",
+    "local-business",
+    "media",
+    "community-leader",
+    "donor",
+    "sponsor"
+  ]
+}

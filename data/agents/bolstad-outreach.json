@@ -1,0 +1,22 @@
+{
+  "agent": "bolstad-outreach",
+  "role": "Outreach & Stakeholder Relations",
+  "model": "google/gemini-2.5-flash",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Research University of Minnesota Board of Regents — names, contact info, meeting schedule",
+      "Identify key Athletic Department decision-makers regarding course closure",
+      "Map Falcon Heights city council members and their stances",
+      "Find Minnesota state legislators with jurisdiction over UMN land use",
+      "Build alumni golfer outreach list — golf team alumni, notable alumni supporters",
+      "Research MN Golf Association leadership and potential advocacy support",
+      "Draft initial outreach email templates for each stakeholder category",
+      "Identify friendly media contacts (local sports reporters, community journalists)",
+      "Research precedents — other university golf course closure fights"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": ""
+}

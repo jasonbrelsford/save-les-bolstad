@@ -1,0 +1,23 @@
+{
+  "agent": "bolstad-crypto",
+  "role": "Crypto Membership & $BOLSTAD Token",
+  "model": "google/gemini-2.5-flash",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Research blockchain platforms suitable for membership tokens (Solana, Polygon, Base)",
+      "Draft $BOLSTAD token whitepaper outline — purpose, tiers, utility",
+      "Define 5 membership tiers with pricing and benefits",
+      "Research legal requirements for utility tokens in Minnesota",
+      "Study precedent projects — sports/venue membership NFTs and tokens",
+      "Design token economics — supply, distribution, treasury allocation",
+      "Evaluate smart contract frameworks for membership verification",
+      "Draft FAQ for non-crypto community members",
+      "Research payment on-ramps (fiat to token purchase for non-crypto users)",
+      "Define governance model — how token holders influence course decisions"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": ""
+}

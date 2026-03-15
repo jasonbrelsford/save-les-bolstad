@@ -1,0 +1,20 @@
+{
+  "agent": "bolstad-coordinator",
+  "role": "Strategic Campaign Coordinator",
+  "model": "anthropic/claude-opus-4-0",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Run initial research cycle — gather baseline data from all agents",
+      "Establish campaign timeline with concrete dates",
+      "Set up learning-loop cadence (daily/weekly cycle schedule)",
+      "Define Phase 1 success criteria and exit conditions",
+      "Create inter-agent communication protocol",
+      "Identify top 3 immediate priorities across all workstreams",
+      "Draft initial campaign brief for human review"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": ""
+}

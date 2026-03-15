@@ -1,0 +1,24 @@
+{
+  "agent": "bolstad-course-ops",
+  "role": "Course Business Operations & Resort/Spa Feasibility",
+  "model": "google/gemini-2.5-flash",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Research Les Bolstad current financials — green fees, rounds played, revenue estimates",
+      "Benchmark against comparable municipal/university courses in the Midwest",
+      "Draft revenue enhancement plan — dynamic pricing, tournaments, corporate outings",
+      "Research resort/spa feasibility — site constraints, zoning, market demand",
+      "Study successful golf course + hospitality models (Bandon Dunes, Pinehurst village model)",
+      "Estimate capital requirements for course improvements vs current maintenance costs",
+      "Draft tee-time optimization and online booking system proposal",
+      "Research winter-use revenue (cross-country skiing, snowshoeing, event venue)",
+      "Create 5-year pro forma financial model template",
+      "Identify potential management company partners",
+      "Research practice facility and lesson program expansion potential"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": ""
+}

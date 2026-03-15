@@ -1,0 +1,24 @@
+{
+  "agent": "bolstad-legal",
+  "role": "Legal, Policy & Compliance",
+  "model": "google/gemini-2.5-flash",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Research University of Minnesota land-use governance — who decides, what process",
+      "Identify Board of Regents policies on property disposition and land use changes",
+      "Research Minnesota state law on university land — any legislative protections",
+      "Investigate if Les Bolstad land has any deed restrictions, easements, or historical designations",
+      "Research nonprofit formation options — 501(c)(3) friends-of organization",
+      "Analyze $BOLSTAD token regulatory compliance — SEC utility token guidance",
+      "Research Minnesota money transmitter laws and crypto regulations",
+      "Identify potential legal challenges to closure (environmental review, public trust)",
+      "Research conservation easement or land trust options",
+      "Draft governance structure for a 'Friends of Les Bolstad' nonprofit",
+      "Review comparable legal battles over university/public golf course closures"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": ""
+}

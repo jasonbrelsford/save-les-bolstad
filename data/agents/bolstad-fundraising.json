@@ -1,0 +1,24 @@
+{
+  "agent": "bolstad-fundraising",
+  "role": "Fundraising & Financial Development",
+  "model": "google/gemini-2.5-flash",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Research crowdfunding platforms — GoFundMe, Kickstarter, sport-specific options",
+      "Draft crowdfunding campaign page copy and goal structure",
+      "Identify potential grant sources — golf foundations, recreation grants, historic preservation",
+      "Research corporate sponsorship opportunities — golf brands, local businesses",
+      "Draft sponsorship tier packages with benefits",
+      "Identify major donor prospects — wealthy alumni golfers, golf industry leaders",
+      "Research UMN Foundation giving channels — can donors earmark for course?",
+      "Plan fundraising events — charity tournament, gala, online auction",
+      "Create donation tracking system design",
+      "Research tax-deductible giving structures (requires nonprofit entity)",
+      "Benchmark fundraising targets against comparable campaigns"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": "Requires nonprofit entity (bolstad-legal workstream) for tax-deductible donations."
+}

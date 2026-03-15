@@ -1,0 +1,33 @@
+{
+  "campaign": "Save Les Bolstad Golf Course",
+  "phase": 1,
+  "phaseName": "Research & Intelligence Gathering",
+  "startDate": null,
+  "lastUpdated": null,
+  "agents": {
+    "bolstad-coordinator": { "status": "idle", "lastCycle": null },
+    "bolstad-outreach": { "status": "idle", "lastCycle": null },
+    "bolstad-social": { "status": "idle", "lastCycle": null },
+    "bolstad-crypto": { "status": "idle", "lastCycle": null },
+    "bolstad-community": { "status": "idle", "lastCycle": null },
+    "bolstad-course-ops": { "status": "idle", "lastCycle": null },
+    "bolstad-legal": { "status": "idle", "lastCycle": null },
+    "bolstad-analytics": { "status": "idle", "lastCycle": null },
+    "bolstad-content": { "status": "idle", "lastCycle": null },
+    "bolstad-fundraising": { "status": "idle", "lastCycle": null }
+  },
+  "milestones": [
+    { "id": "research-complete", "name": "Initial Research Complete", "target": null, "done": false },
+    { "id": "petition-launched", "name": "Online Petition Launched", "target": null, "done": false },
+    { "id": "social-accounts", "name": "Social Media Accounts Active", "target": null, "done": false },
+    { "id": "coalition-formed", "name": "Community Coalition Formed", "target": null, "done": false },
+    { "id": "business-plan", "name": "Sustainability Business Plan Draft", "target": null, "done": false },
+    { "id": "token-whitepaper", "name": "$BOLSTAD Token Whitepaper", "target": null, "done": false },
+    { "id": "first-event", "name": "First Community Event Held", "target": null, "done": false },
+    { "id": "media-coverage", "name": "First Media Coverage Secured", "target": null, "done": false },
+    { "id": "fundraising-goal", "name": "$100K Fundraising Target", "target": null, "done": false },
+    { "id": "petition-10k", "name": "10,000 Petition Signatures", "target": null, "done": false }
+  ],
+  "campaignEmail": null,
+  "notes": "Campaign email TBD — will be created when campaign strategy is finalized."
+}

@@ -1,0 +1,20 @@
+{
+  "kpis": {
+    "petition": { "signatures": 0, "target": 10000, "url": null },
+    "social": {
+      "twitter": { "followers": 0, "target": 5000, "handle": null },
+      "reddit": { "members": 0, "subreddit": null },
+      "instagram": { "followers": 0, "handle": null }
+    },
+    "fundraising": { "raised": 0, "target": 100000, "donors": 0 },
+    "community": { "volunteers": 0, "events_held": 0, "coalition_members": 0 },
+    "media": { "articles": 0, "mentions": 0 },
+    "token": { "holders": 0, "memberships_sold": 0 }
+  },
+  "sentiment": {
+    "lastAnalysis": null,
+    "overall": null,
+    "sources": {}
+  },
+  "lastUpdated": null
+}

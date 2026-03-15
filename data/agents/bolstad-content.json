@@ -1,0 +1,24 @@
+{
+  "agent": "bolstad-content",
+  "role": "Content Creation & Media",
+  "model": "deepseek/deepseek-chat",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Research Les Bolstad history for storytelling — founding, notable events, legends",
+      "Draft 'About Les Bolstad' narrative — course history, community significance",
+      "Write initial blog post / campaign launch announcement",
+      "Draft press release template for campaign launch",
+      "Create email newsletter template for supporters",
+      "Research and compile course photography sources (university archives, Flickr, social)",
+      "Draft op-ed template for local newspapers (Star Tribune, Pioneer Press)",
+      "Write FAQ document — why save the course, what can people do",
+      "Plan video content strategy — testimonials, course flyover, community stories",
+      "Draft talking points document for volunteers and advocates",
+      "Create social media content templates (quote cards, stat graphics, story formats)"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": ""
+}

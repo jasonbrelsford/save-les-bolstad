@@ -1,0 +1,27 @@
+{
+  "cycles": [],
+  "currentCycleId": null,
+  "templateReport": {
+    "cycleId": null,
+    "timestamp": null,
+    "phase": null,
+    "agentReports": {
+      "bolstad-outreach": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] },
+      "bolstad-social": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] },
+      "bolstad-crypto": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] },
+      "bolstad-community": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] },
+      "bolstad-course-ops": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] },
+      "bolstad-legal": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] },
+      "bolstad-analytics": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] },
+      "bolstad-content": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] },
+      "bolstad-fundraising": { "momentum": null, "impact": null, "costEfficiency": null, "summary": "", "blockers": [], "nextActions": [] }
+    },
+    "coordinatorSynthesis": {
+      "overallScore": null,
+      "phaseProgress": null,
+      "topPriorities": [],
+      "resourceReallocation": [],
+      "escalations": []
+    }
+  }
+}

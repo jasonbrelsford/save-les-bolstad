@@ -1,0 +1,23 @@
+{
+  "agent": "bolstad-social",
+  "role": "Social Media & Digital Presence",
+  "model": "deepseek/deepseek-chat",
+  "lastActive": null,
+  "tasks": {
+    "todo": [
+      "Research existing #SaveLesBolstad or related hashtags on Twitter/X",
+      "Audit existing social media mentions of Les Bolstad closure",
+      "Draft social media strategy — platforms, tone, posting cadence",
+      "Create content calendar template for first 4 weeks",
+      "Draft initial Twitter/X thread announcing the campaign",
+      "Research relevant Reddit communities (r/golf, r/minnesota, r/twincities, r/uofmn)",
+      "Draft Reddit post for r/golf introducing the campaign",
+      "Identify golf influencers and advocates to engage",
+      "Plan Instagram visual strategy — course photos, history, community stories",
+      "Set up hashtag tracking and social listening keywords"
+    ],
+    "inProgress": [],
+    "done": []
+  },
+  "notes": "Social accounts TBD — campaign email needs to be created first."
+}

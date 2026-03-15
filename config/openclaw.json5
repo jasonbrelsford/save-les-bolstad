@@ -1,0 +1,181 @@
+{
+  // OpenClaw configuration for Save Les Bolstad campaign
+  // All agents run containerized via Docker Compose
+  //
+  // Coordinator: Claude Opus 4.6 (strategic decisions, learning loop)
+  // Research/Ops agents: Gemini 2.5 Flash (cost-effective, fast)
+  // Social/Content agents: DeepSeek V3 (strong writing, low cost)
+
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com",
+        "apiKey": { "source": "env", "provider": "default", "id": "DEEPSEEK_API_KEY" },
+        "api": "openai-completions",
+        "models": [
+          { "id": "deepseek-chat", "name": "DeepSeek V3" }
+        ]
+      }
+    }
+  },
+
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google/gemini-2.5-flash",
+        "fallbacks": ["google/gemini-2.5-flash"]
+      },
+      "models": {
+        "google/gemini-2.5-flash": {
+          "alias": "Gemini 2.5 Flash",
+          "params": { "maxTokens": 4096 }
+        },
+        "anthropic/claude-opus-4-6": {
+          "alias": "Claude Opus 4.6 (Coordinator)",
+          "params": { "maxTokens": 8192 }
+        },
+        "deepseek/deepseek-chat": {
+          "alias": "DeepSeek V3",
+          "params": { "maxTokens": 4096 }
+        }
+      },
+      "contextTokens": 32768,
+      "compaction": { "mode": "safeguard" },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 16,
+        "model": {
+          "primary": "google/gemini-2.5-flash",
+          "fallbacks": ["google/gemini-2.5-flash"]
+        },
+        "thinking": "minimal"
+      }
+    },
+
+    "list": [
+      {
+        "id": "main"
+      },
+
+      // ── Coordinator (Opus 4.6) ──────────────────────────────
+      {
+        "id": "coordinator",
+        "name": "coordinator",
+        "model": "anthropic/claude-opus-4-6",
+        "agentDir": "./agents/coordinator/agent",
+        "skills": ["gog", "agent-browser", "github", "gh-issues", "larrybrain"],
+        "subagents": {
+          "allowAgents": [
+            "outreach",
+            "social-media",
+            "crypto-membership",
+            "community",
+            "course-ops",
+            "legal-policy",
+            "analytics",
+            "content-creator",
+            "fundraising"
+          ],
+          "thinking": "minimal"
+        }
+      },
+
+      // ── Outreach (Gemini Flash) ─────────────────────────────
+      {
+        "id": "outreach",
+        "name": "outreach",
+        "model": "google/gemini-2.5-flash",
+        "agentDir": "./agents/outreach/agent",
+        "skills": ["gog", "agent-browser", "github"],
+        "subagents": { "thinking": "minimal" }
+      },
+
+      // ── Social Media (DeepSeek V3) ──────────────────────────
+      {
+        "id": "social-media",
+        "name": "social-media",
+        "model": "deepseek/deepseek-chat",
+        "agentDir": "./agents/social-media/agent",
+        "skills": ["gog", "agent-browser"],
+        "subagents": { "thinking": "minimal" }
+      },
+
+      // ── Crypto Membership (Gemini Flash) ────────────────────
+      {
+        "id": "crypto-membership",
+        "name": "crypto-membership",
+        "model": "google/gemini-2.5-flash",
+        "agentDir": "./agents/crypto-membership/agent",
+        "skills": ["gog", "agent-browser", "larrybrain"],
+        "subagents": { "thinking": "minimal" }
+      },
+
+      // ── Community Engagement (DeepSeek V3) ──────────────────
+      {
+        "id": "community",
+        "name": "community",
+        "model": "deepseek/deepseek-chat",
+        "agentDir": "./agents/community/agent",
+        "skills": ["gog", "agent-browser"],
+        "subagents": { "thinking": "minimal" }
+      },
+
+      // ── Course Operations (Gemini Flash) ────────────────────
+      {
+        "id": "course-ops",
+        "name": "course-ops",
+        "model": "google/gemini-2.5-flash",
+        "agentDir": "./agents/course-ops/agent",
+        "skills": ["gog", "agent-browser"],
+        "subagents": { "thinking": "minimal" }
+      },
+
+      // ── Legal & Policy (Gemini Flash) ───────────────────────
+      {
+        "id": "legal-policy",
+        "name": "legal-policy",
+        "model": "google/gemini-2.5-flash",
+        "agentDir": "./agents/legal-policy/agent",
+        "skills": ["gog", "agent-browser"],
+        "subagents": { "thinking": "minimal" }
+      },
+
+      // ── Analytics (DeepSeek V3) ─────────────────────────────
+      {
+        "id": "analytics",
+        "name": "analytics",
+        "model": "deepseek/deepseek-chat",
+        "agentDir": "./agents/analytics/agent",
+        "skills": ["gog", "agent-browser"],
+        "subagents": { "thinking": "minimal" }
+      },
+
+      // ── Content Creator (DeepSeek V3) ───────────────────────
+      {
+        "id": "content-creator",
+        "name": "content-creator",
+        "model": "deepseek/deepseek-chat",
+        "agentDir": "./agents/content-creator/agent",
+        "skills": ["gog", "agent-browser"],
+        "subagents": { "thinking": "minimal" }
+      },
+
+      // ── Fundraising (Gemini Flash) ──────────────────────────
+      {
+        "id": "fundraising",
+        "name": "fundraising",
+        "model": "google/gemini-2.5-flash",
+        "agentDir": "./agents/fundraising/agent",
+        "skills": ["gog", "agent-browser", "github"],
+        "subagents": { "thinking": "minimal" }
+      }
+    ]
+  },
+
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan"
+  }
+}
