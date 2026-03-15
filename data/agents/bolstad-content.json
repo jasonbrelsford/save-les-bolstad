@@ -15,10 +15,15 @@
       "Write FAQ document — why save the course, what can people do",
       "Plan video content strategy — testimonials, course flyover, community stories",
       "Draft talking points document for volunteers and advocates",
-      "Create social media content templates (quote cards, stat graphics, story formats)"
+      "Create social media content templates (quote cards, stat graphics, story formats)",
+      "[TikTok] Write 10 hook variations for Les Bolstad campaign (reaction-style, 4-6 words/line)",
+      "[TikTok] Develop image prompt library — 6 course scenes per slideshow theme",
+      "[TikTok] Generate first batch of AI images with gpt-image-1.5 (portrait 1024x1536)",
+      "[TikTok] Create text overlay templates for slideshow slides",
+      "[TikTok] Build 3 complete slideshows: beauty, history, community angles"
     ],
     "inProgress": [],
     "done": []
   },
-  "notes": ""
+  "notes": "larry-marketing skill installed for TikTok slideshow pipeline."
 }

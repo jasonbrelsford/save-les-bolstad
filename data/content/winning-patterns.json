@@ -1,0 +1,42 @@
+{
+  "_description": "Winning patterns are learnings from content that WORKED. Agents should replicate and iterate on these.",
+  "winningPatterns": [],
+  "patternTemplate": {
+    "id": null,
+    "dateLogged": null,
+    "sourceHookId": null,
+    "category": "hook-style|image-style|timing|platform|audience|hashtag|cta|format",
+    "description": "",
+    "metrics": {
+      "impressions": 0,
+      "clicks": 0,
+      "conversions": 0,
+      "viewToClickRate": null,
+      "clickToConvertRate": null
+    },
+    "whyItWorked": "",
+    "rule": "",
+    "confidence": "low|medium|high",
+    "platforms": [],
+    "replicateCount": 0
+  },
+  "rules": [
+    {
+      "id": "WIN-SEED-001",
+      "rule": "Personal stories from golfers who played Les Bolstad are the highest-converting content type. Always include a personal angle.",
+      "category": "hook-style",
+      "confidence": "medium",
+      "dateLogged": "2026-03-15",
+      "sourceHookId": null
+    },
+    {
+      "id": "WIN-SEED-002",
+      "rule": "Historical photos of the course paired with 'then vs now' framing drive high saves and shares on Instagram.",
+      "category": "image-style",
+      "confidence": "low",
+      "dateLogged": "2026-03-15",
+      "sourceHookId": null
+    }
+  ],
+  "lastUpdated": "2026-03-15"
+}

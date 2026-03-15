@@ -1,0 +1,65 @@
+{
+  "_description": "Anti-patterns are learnings from content that FAILED. High views + low conversion = wrong audience. High clicks + no signups = weak landing. Agents MUST check this before creating new content to avoid repeating mistakes.",
+  "antiPatterns": [],
+  "antiPatternTemplate": {
+    "id": null,
+    "dateLogged": null,
+    "sourceHookId": null,
+    "category": "wrong-audience|wrong-platform|wrong-timing|wrong-tone|wrong-cta|misleading-hook|overused-format|wrong-hashtag",
+    "description": "",
+    "metrics": {
+      "impressions": 0,
+      "clicks": 0,
+      "conversions": 0,
+      "viewToClickRate": null,
+      "clickToConvertRate": null
+    },
+    "whyItFailed": "",
+    "rule": "",
+    "severity": "caution|avoid|ban",
+    "platforms": []
+  },
+  "rules": [
+    {
+      "id": "RULE-SEED-001",
+      "rule": "If a hook gets >1000 views but <1% click-through, tag as wrong-audience and log the audience signal that attracted wrong viewers.",
+      "category": "wrong-audience",
+      "severity": "avoid",
+      "dateLogged": "2026-03-15",
+      "sourceHookId": null
+    },
+    {
+      "id": "RULE-SEED-002",
+      "rule": "If a hook gets high clicks but <2% conversion to petition/donation, the CTA or landing experience is broken — fix the funnel before creating more hooks.",
+      "category": "wrong-cta",
+      "severity": "caution",
+      "dateLogged": "2026-03-15",
+      "sourceHookId": null
+    },
+    {
+      "id": "RULE-SEED-003",
+      "rule": "If an image post outperforms text-only by >2x engagement, shift 70% of content to image-first formats on that platform.",
+      "category": "format-insight",
+      "severity": "caution",
+      "dateLogged": "2026-03-15",
+      "sourceHookId": null
+    },
+    {
+      "id": "RULE-SEED-004",
+      "rule": "If controversy hooks (anti-university framing) get high engagement but drive negative sentiment and no conversions, BAN that framing permanently. Community-positive framing only.",
+      "category": "wrong-tone",
+      "severity": "ban",
+      "dateLogged": "2026-03-15",
+      "sourceHookId": null
+    },
+    {
+      "id": "RULE-SEED-005",
+      "rule": "If a Reddit post gets removed or downvoted to 0, log the subreddit's posting rules as an anti-pattern. Do NOT post similar content there again without rule compliance.",
+      "category": "wrong-platform",
+      "severity": "avoid",
+      "dateLogged": "2026-03-15",
+      "sourceHookId": null
+    }
+  ],
+  "lastUpdated": "2026-03-15"
+}

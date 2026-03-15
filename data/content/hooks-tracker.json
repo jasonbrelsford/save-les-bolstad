@@ -1,0 +1,51 @@
+{
+  "hooks": [],
+  "hookTemplate": {
+    "id": null,
+    "hook": "",
+    "type": "text|image|video|thread",
+    "platform": "twitter|reddit|instagram",
+    "audience": "",
+    "intent": "awareness|engagement|conversion|fundraising",
+    "createdAt": null,
+    "postedAt": null,
+    "metrics": {
+      "impressions": 0,
+      "views": 0,
+      "clicks": 0,
+      "likes": 0,
+      "shares": 0,
+      "comments": 0,
+      "conversions": 0,
+      "petitionSignups": 0,
+      "donations": 0,
+      "follows": 0
+    },
+    "analysis": {
+      "viewToClickRate": null,
+      "clickToConvertRate": null,
+      "verdict": "pending|winner|underperformer|wrong-audience|wrong-platform|wrong-timing",
+      "lesson": "",
+      "promotedToAntiPattern": false
+    }
+  },
+  "images": [],
+  "imageTemplate": {
+    "id": null,
+    "description": "",
+    "style": "photo|infographic|quote-card|meme|story|reel-thumbnail",
+    "platform": "twitter|reddit|instagram",
+    "pairedHookId": null,
+    "createdAt": null,
+    "metrics": {
+      "impressions": 0,
+      "saves": 0,
+      "shares": 0
+    },
+    "analysis": {
+      "verdict": "pending|winner|underperformer|wrong-style",
+      "lesson": ""
+    }
+  },
+  "lastUpdated": null
+}

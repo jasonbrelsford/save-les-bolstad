@@ -1,0 +1,26 @@
+{
+  "_description": "A/B test registry. Every content variant should be tracked here so the system can learn which hooks, images, and formats perform best.",
+  "tests": [],
+  "testTemplate": {
+    "id": null,
+    "name": "",
+    "hypothesis": "",
+    "platform": "",
+    "variantA": {
+      "hookId": null,
+      "description": "",
+      "metrics": {}
+    },
+    "variantB": {
+      "hookId": null,
+      "description": "",
+      "metrics": {}
+    },
+    "startDate": null,
+    "endDate": null,
+    "winner": null,
+    "lesson": "",
+    "promotedToPattern": false
+  },
+  "lastUpdated": null
+}

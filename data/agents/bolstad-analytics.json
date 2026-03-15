@@ -15,10 +15,14 @@
       "Define A/B testing framework for campaign messaging",
       "Create weekly report template for coordinator consumption",
       "Research university enrollment and alumni engagement trends",
-      "Analyze golf industry trends in Minnesota — growth vs decline"
+      "Analyze golf industry trends in Minnesota — growth vs decline",
+      "[TikTok] Set up TikTok metrics collection pipeline via Postiz analytics",
+      "[TikTok] Define TikTok KPI thresholds (views, watch-through, shares, profile visits)",
+      "[TikTok] Create first hooks-tracker verdict report after initial posts",
+      "[TikTok] Build cross-platform attribution — TikTok views → petition signups"
     ],
     "inProgress": [],
     "done": []
   },
-  "notes": ""
+  "notes": "Responsible for self-learning loop verdicts. Writes to hooks-tracker, anti-patterns, winning-patterns."
 }
